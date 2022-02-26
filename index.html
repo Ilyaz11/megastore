@@ -5,17 +5,28 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>CoWork</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <h3>Авторизация</h3>
-        <p>Введите номер телефона</p>
-        <input type="tel" name="tel" placeholder="+996 500 11 09 03">
-        <a href="index2.html"><button type="button">Далее</button></a>
-    </div>
+
+<div class="container d-flex justify-content-center align-items-center bg-black w-100 h-100">
+
+    <form class=" d-grid gap-3 py-5 px-4 bg-light w-75 h-75" style="margin: 200px 50px">
+        <h5>Авторизация</h5>
+        <div class="row">
+            <div class="col-12" id="number">
+                <label for="number">Введите номер телефона</label>
+                <input type="text" class="form-control p-2 fs-4"  placeholder="+996 551 288 202">
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <a href="index2.html" class="text-decoration-none"><input type="button" class="form-control p-3 bg-dark text-light" value="ДАЛЕЕ"></a>
+            </div>
+        </div>
+    </form>
+
 </div>
 </body>
 </html>

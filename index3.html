@@ -5,32 +5,82 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>\
-    <link rel="stylesheet" href="style3.css">
+    <title>CoWork</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <h1>Анкета для корпоративных клиентов</h1>
-        <p>Личные данные</p>
-        <div>
-            <input type="text" placeholder="Фамилия">
-            <input type="text" placeholder="Имя">
-            <input type="text" placeholder="Отчество">
-            <p>Паспортные данные</p>
-            <input type="text" placeholder="Дата рождения дд.мм.гг">
-            <input type="text" class="elem" placeholder="Место проживания по проспики">
-            <input type="text" placeholder="Серийный номер AN/ID">
-            <input type="text" placeholder="ИНН">
-            <input type="text" placeholder="Дата получения дд.мм.гг">
-            <input type="text" placeholder="Контактный номер">
-            <input type="text" placeholder="Электронный адрес">
-            <input type="text" placeholder="Наименование банка">
-            <input type="text" class="elem" placeholder="Фактическая место проживания">
-            <a href="index4.html"><button type="button">Далее</button></a>
-        </div>
-    </div>
 
+<div class="container d-flex justify-content-center align-items-center bg-black w-100 h-100">
+
+    <form class=" d-grid gap-3  py-5 px-4 bg-light m-5 w-75 h-auto">
+        <h5>Анкета корпоративных клиентов</h5>
+        <h6>Личнные данные</h6>
+        <div class="row">
+            <div class="col" id="private_s">
+                <label for="private_s">Фамилия</label>
+                <input type="text" class="form-control"  placeholder="Фамилия">
+            </div>
+
+            <div class="col" id="private_n">
+                <label for="private_n">Имя</label>
+                <input type="text" class="form-control" placeholder="Имя">
+            </div>
+
+            <div class="col" id="private_sn">
+                <label for="private_sn">Отчество</label>
+                <input type="text" class="form-control" placeholder="Отчество">
+            </div>
+        </div>
+        <h6>Паспортные данные</h6>
+        <div class="row">
+            <div class="col-4" id="dataBirthday">
+                <label for="sNumber">Дата рождения</label>
+                <input type="text" class="form-control"  placeholder="11.09.2003">
+            </div>
+            <div class="col-8" id="Live">
+                <label for="Live">Место проживания по прописке</label>
+                <input type="text" class="form-control" placeholder="Бишкек, ул. Инстиутская 12, кв.11">
+            </div>
+            <div class="col-4" id="sNumber">
+                <label for="sNumber">Серийный номер AN/ID</label>
+                <input type="text" class="form-control"  placeholder="AN1234567">
+            </div>
+            <div class="col-4" id="inn">
+                <label for="inn">ИНН</label>
+                <input type="text" class="form-control" placeholder="1234567891234">
+            </div>
+            <div class="col-4" id="dataReceive">
+                <label for="dataReceive">Дата получения</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="12.12.2022">
+                </div>
+            </div>
+            <div class="col-4" id="knumber">
+                <label for="knumber">Контактный номер</label>
+                <input type="text" class="form-control"  placeholder="+996 559 000 000">
+            </div>
+            <div class="col-4" id="email">
+                <label for="email">Электронный адрес</label>
+                <input type="text" class="form-control" placeholder="kurmanov@gmail.com">
+            </div>
+            <div class="col-4" id="bank">
+                <label for="bank">Наименование банка</label>
+                <select class="form-select">
+                    <option selected>Выберите банк</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-8" id="factLive">
+                <label for="factLive">Фактическое место проживания</label>
+                <input type="text" class="form-control" placeholder="Бишкек, ул. Институтская, кв.11">
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-8">
+                    <a href="index5.html" class="text-decoration-none"><input type="button" class="form-control bg-dark text-light" value="ДАЛЕЕ"></a>
+                </div>
+            </div>
+        </div>
+    </form>
 </div>
 </body>
 </html>
